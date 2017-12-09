@@ -1,0 +1,37 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+			<title>SoundCloud API</title>	
+		</head>
+		<body>
+			<div id='content' class='style'>
+			<img src='sc.png' alt='logo' id='logo'/>
+			<p>Search By Name:  <input type='text' id='searchTerm' placeholder="Enter song name"></input>
+			Search By Song ID:  <input type='number' id='searchId' placeholder="Enter song ID"></input></p>
+			<!-- Search By Playlist: <input type='number' id='searchList' placeholder="Enter playlist ID"></p> -->
+			<button id='play'>▶</button>
+			<button id='pause'><strong>||</strong></button>
+			<button id='stop'>◼</button>
+			<button id='previous'>▲</button>
+			<button id='next'>▼</button>
+			<img src='dance.gif' alt='bob' id='bob'/>
+			</div>
+			<div id='container'>
+				<div id='result'></div>
+			</div>
+		</body>
+		<script src="https://connect.soundcloud.com/sdk/sdk-3.2.2.js"></script>
+<script>
+SC.initialize({
+  client_id: 'fd4e76fc67798bfa742089ed619084a6',
+  redirect_uri: 'http://example.com/callback'
+});
+</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript.js"></script>
+	</html>
+
+	
